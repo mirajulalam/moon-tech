@@ -1,9 +1,10 @@
-import React, {  createContext, useContext, useEffect, useState } from 'react';
-
+import React, {  createContext, useContext, useEffect,useState } from 'react';
 const  PRODUCT_CONTEXT=createContext();
 
 const ProductProvider = ({children}) => {
     const [data,setData]=useState([]);
+
+    // const [state,dispatch]=useReducer(productReducer,initialState)
 
   useEffect(()=>{
     fetch('products.json')
