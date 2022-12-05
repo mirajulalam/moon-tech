@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import { BsFillCartFill } from "react-icons/bs";
 import { IoIosListBox } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -12,18 +12,18 @@ const Navbar = () => {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/'>Top Rated</Link>
+            <Link to='/top-rated'>Top Rated</Link>
           </li>
           <li>
-            <Link to='/'>About</Link>
+            <Link to='/about'>About</Link>
           </li>
           <li title='Wishlist' className='bg-indigo-500 p-2 rounded-full'>
             <Link to='/'>
               <IoIosListBox className='text-white' />
             </Link>
           </li>
-          <li title='' className='bg-indigo-500 p-2 rounded-full'>
-            <Link to='/'>
+          <li title='cart' className='bg-indigo-500 p-2 rounded-full'>
+            <Link to='/cart'>
               <BsFillCartFill className='text-white ' />
             </Link>
           </li>
